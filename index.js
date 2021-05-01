@@ -32,6 +32,11 @@ const oAuthConfig = {
                 if (message.message_create.sender_id === message.message_create.target.recipient_id) {
                     return;
                 }
+
+                if (typeof event.apps !== 'undefined') {
+                    return;
+                }
+
                 let tweetId = getTweetId(message);
                 let urlList = await getVideoUrls(tweetId);
                 let bestUrl = getBestUrl(urlList);
