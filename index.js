@@ -64,7 +64,7 @@ const oAuthConfig = {
         await webhook.start();
 
         // Subscribes to your own user's activity
-        await webhook.subscribe({ oauth_token: process.env.TWITTER_ACCESS_TOKEN, oauth_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET });
+        await webhook.subscribe({ oauth_token: "1324874116571275265-5849bpY0VTTNa6QLhjTTGQt5y5EDy4", oauth_token_secret: "GVavC4FRVtwSkuFDTUheFO26fvQ8r0rsxEYMm0KatKZWU" });
     } catch (e) {
         // Display the error and quit
         console.error(e);
